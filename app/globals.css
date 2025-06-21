@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  @apply antialiased;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #F9D423 100%);
+  }
+}
+
+@layer base {
+  :root {
+    /* Light theme with golden accents */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 42 88% 50%; /* Golden primary */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 30% 90%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 42 30% 90%;
+    --accent-foreground: 0 0% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 42 88% 50%; /* Golden ring */
+    
+    /* Golden chart colors */
+    --chart-1: 42 88% 50%; /* Primary gold */
+    --chart-2: 32 85% 45%; /* Darker gold */
+    --chart-3: 22 80% 40%; /* Bronze */
+    --chart-4: 52 90% 55%; /* Light gold */
+    --chart-5: 12 75% 50%; /* Gold-red */
+    
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 95%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 42 88% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 42 30% 90%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 42 88% 50%;
+  }
+
+  .dark {
+    /* Rich dark theme with gold accents */
+    --background: 240 6% 10%;
+    --foreground: 0 0% 92%;
+    --card: 240 6% 13%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 6% 13%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 42 88% 50%; /* Golden primary */
+    --primary-foreground: 240 6% 13%;
+    --secondary: 240 5% 20%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 240 5% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 240 5% 20%;
+    --accent-foreground: 42 88% 50%; /* Gold accent text */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5% 25%;
+    --input: 240 5% 25%;
+    --ring: 42 88% 50%; /* Golden focus ring */
+    
+    /* Enhanced chart colors for dark mode */
+    --chart-1: 42 88% 60%; /* Bright gold */
+    --chart-2: 32 85% 55%; /* Rich gold */
+    --chart-3: 22 80% 50%; /* Warm bronze */
+    --chart-4: 52 90% 65%; /* Light gold */
+    --chart-5: 12 75% 60%; /* Gold-red */
+    
+    --sidebar-background: 240 6% 15%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 42 88% 50%;
+    --sidebar-primary-foreground: 240 6% 15%;
+    --sidebar-accent: 240 5% 20%;
+    --sidebar-accent-foreground: 42 88% 50%;
+    --sidebar-border: 240 5% 25%;
+    --sidebar-ring: 42 88% 50%;
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      @apply w-2;
+    }
+    ::-webkit-scrollbar-track {
+      @apply bg-background;
+    }
+    ::-webkit-scrollbar-thumb {
+      @apply bg-primary rounded-full;
+    }
+    
+    /* Selection colors */
+    ::selection {
+      @apply bg-primary/30 text-foreground;
+    }
+    
+    /* Input focus styles */
+    input:focus, textarea:focus, select:focus {
+      @apply ring-2 ring-primary ring-offset-2 ring-offset-background outline-none;
+    }
+    
+    /* Golden decorative elements */
+    .gold-underline {
+      @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300;
+    }
+  }
+}
