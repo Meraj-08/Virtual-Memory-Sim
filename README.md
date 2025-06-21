@@ -4,10 +4,13 @@
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://reactjs.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 
-### GDSC/Computer Science Educational Tool
+### PBL OS PROJECT
 
 ## 📌 Overview  
 Virtual Memory Manager is an interactive educational platform that visualizes memory management algorithms through simulations, comparisons, and quizzes. Designed to help students understand virtual memory concepts with hands-on experimentation.
+
+## 🔗 Live Demo  
+👉 [https://virtual-memory-sim.vercel.app/](https://virtual-memory-sim.vercel.app/)
 
 ## 🚀 Features  
 - **Algorithm Simulations**: Interactive visualization of FIFO, LRU, Optimal, Clock, and other page replacement algorithms  
@@ -45,10 +48,6 @@ Computer science students often struggle to grasp virtual memory concepts throug
 ![Architecture Diagram](assetes/virtual-simulator.png)
 (Architecture diagram will be added here)
 
-## 📱 App Flow
-<!-- ![App Screens](assets/app-flow.png) -->
-(App flow diagram will be added here)
-
 ## 📥 Installation  
 1. Clone the repository:  
 ```bash
@@ -80,3 +79,8 @@ We welcome contributions! Feel free to submit pull requests or raise issues.
 4. Push to the branch:  
    `git push origin feature/AmazingFeature`  
 5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
