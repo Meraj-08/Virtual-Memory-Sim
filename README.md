@@ -51,9 +51,9 @@ Computer science students often struggle to grasp virtual memory concepts throug
 
 ## 📥 Installation  
 1. Clone the repository:  
-   ```bash
+```bash
    git clone https://github.com/your-repo/virtual-memory-manager.git
-   ```
+```
 2.Navigate to the project directory:
 ```bash
   cd virtual-memory-manager
@@ -70,8 +70,8 @@ npm run dev
 
 ## 🤝 Contributing 
 We welcome contributions! Feel free to submit pull requests or raise issues. 
--**Fork the project**
--**Create your feature branch (git checkout -b feature/AmazingFeature)**
--**Commit your changes (git commit -m 'Add some AmazingFeature')**
+-Fork the project
+-Create your feature branch (git checkout -b feature/AmazingFeature)
+-Commit your changes (git commit -m 'Add some AmazingFeature')
 -**Push to the branch (git push origin feature/AmazingFeature)**
 -**Open a Pull Request**
