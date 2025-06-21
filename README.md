@@ -42,7 +42,7 @@ Computer science students often struggle to grasp virtual memory concepts throug
 ✅ **Open Source** - Adaptable for different curricula and teaching styles  
 
 ## 🏗️ Architecture
-![Architecture Diagram](asstes/virtual-simulator.png)
+![Architecture Diagram](assetes/virtual-simulator.png)
 (Architecture diagram will be added here)
 
 ## 📱 App Flow
